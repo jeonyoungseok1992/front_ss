@@ -1,0 +1,32 @@
+.sidebar{
+    margin: none;
+    position: fixed;
+    left: 0;
+    top: 110px;
+    bottom: 0px;
+    width: 100px;
+    z-index: 200;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.sidebar-link img{
+    
+    height: 100px;
+    width: 100px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}

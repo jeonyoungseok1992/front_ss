@@ -1,14 +1,116 @@
 body{
+    height: 2000px;
     margin: 0;
     display: flex;
     flex-direction: column;
+    padding-top: 80px;
+    padding-left: 140px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
     
 }
 
+
 .table-section {
- 
+    width: 100%;
     flex-grow: 3;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-content: left;
+
+}
+
+table{
+    text-align: left;
+    margin-bottom: 30px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #c8c9d2;
+    font-family: -apple-system,BlinkMacSystemFont,'Malgun Gothic','맑은 고딕',helvetica,'Apple SD Gothic Neo',helvetica,'나눔바른고딕 옛한글','NanumBarunGothic YetHangul',sans-serif;
+    font-size: 1.3rem;
+    
+}
+
+.p1-1{
+    padding-top: 2px;
+    height: 45px;
+    width: 400px;
+    display: flex;
     align-items: center;
+    justify-content:center;
+    border-right: 2px solid #c8c9d2;
+     border-bottom: 0.5px solid #ccc; 
+}
+
+.s15{
+    height: 18px;
+    width: 18px;
+
+}
+
+.p2-1{
+    min-width: 100px;
+}
+
+.p3{
+    min-width: 80px;
+}
+
+.t-title{
+    width: 900px;
+    height: 67px;
+    padding-top: 13px;
+    padding: 0 80px;
+}
+
+.t-option{
+    width: 150px;
+    height: 30px;
+    padding: 3px 5px;
+    border: none;
+    font-size: 18px;
+
+
+
+}
+
+/* .p1-2{
+     padding-top: 2px;
+     display: flex;
+    align-items: center;
+    justify-content:center;
+    border-right: 2px solid #c8c9d2;
+    border-bottom: 1px solid #ccc; 
+} */
+
+.p3{
+    border-bottom: 0.5px solid #ccc; 
+}
+.p2-1{
+    border-bottom: 0.5px solid #ccc; 
+}
+
+.p1-2{
+    width: 400px;
+    border-right: 2px solid #c8c9d2;
+    border-bottom: 1px solid #ccc; 
+}
+
+.imogi{
+    
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+
+    text-indent: -99999px;  /**텍스트 숨길 때 사용*/
+    background: url(./assets/icons/sp_rank.png) 0 0 repeat;
+}
+
+.p1-1, .p1-2{
+    /* display: flex;
+    justify-content: flex-start;
+    margin-left: 20px; */
+    /* padding-right: 150px; */
 }
