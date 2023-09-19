@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="test" ></div>
+    <input type="color" id="selectColor">
+    <button onclick="accessClass()">class로 접근</button>
+
+    <script>
+        function accessClass(){
+            
+            const arr = document.getElementsByClassName('test');
+                unit.style.background = selectColor.value;
+            
+        }
+    </script>
+
+
+<div class="test1" ></div>
+<button onclick="size1()">50 50</button>
+<button onclick="size2()">70 70</button>
+<button onclick="size3()">90 90</button>
+
+<script>
+    function size1(){
+        const test = document.getElementsByClassName('test1');
+        test.style.width="50px";
+        test.style.height="50px";
+        test.style.background = 'red';
+        
+    }
+
+    function size2(){
+        const test = document.getElementsByClassName('test1');
+        test.style.width="100px";
+        test.style.height="100px";
+
+    }
+
+    function size3(){
+        const test = document.getElementsByClassName('test1');
+        test.style.width="200px";
+        test.style.height="200px";
+    }
+</script>
+<br>
+구매자 :  <input type="text">        <br><br>
+상품명 : <input type="text" id="pro-input">      <br><br>
+가격 :  <input type="text" name="price-input">        <br><br>
+<div class="product" ><input id="result-input" type="text"></div>
+<button onclick="inputValueTest()">입력값 출력하기</button>       <br>
+
+
+<script>
+    function inputValueTest(){      
+        let idInput = document.getElementsByTagName('input'); 
+        idInput[0]
+        let proInput = document.getElementById('pro-input');
+        let price = document.getElementsByName('price-input');
+        
+        let result = document.getElementById('result-input');
+        result.value = idInput.value + "," + proInput.value
+        + "," + price.value;
+    }
+</script>
+
+
+
+
+</body>
+</html>
