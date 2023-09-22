@@ -37,8 +37,8 @@ table{
     height: 45px;
     width: 400px;
     display: flex;
-    align-items: center;
-    justify-content:center;
+    /* align-items: center;
+    justify-content:center; */
     border-right: 2px solid #c8c9d2;
      border-bottom: 0.5px solid #ccc; 
 }
@@ -113,4 +113,9 @@ table{
     justify-content: flex-start;
     margin-left: 20px; */
     /* padding-right: 150px; */
+}
+
+.lleft{
+    padding-left: 10px;
+    
 }
